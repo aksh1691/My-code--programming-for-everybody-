@@ -1,0 +1,16 @@
+code for calculating the pay for  the number of hrs  and rate is 10.5 for the first 40 hrs and 10.5 * 1.5 for the remaining
+
+hrs = raw_input("Enter Hours:")
+h = float(hrs)
+rate = raw_input("Enter Rate:")
+r = float(rate)
+
+if h <= 40:
+    pay = h * r
+
+elif h > 40:
+    pay = (40 * r) + ((h - 40) * r * 1.5) 
+    
+print pay     
+    
+    
